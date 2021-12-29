@@ -51,8 +51,11 @@ include_directories(${Boost_INCLUDEDIR})
 file(GLOB BOOST_LIBS ${Boost_LIBRARYDIR}/*.lib)
 link_libraries(${BOOST_LIBS})
 
-include_directories(${CMAKE_SOURCE_DIR})
-include_directories(${CMAKE_SOURCE_DIR}/third_party/spdlog/include)
+include_directories(
+	${CMAKE_SOURCE_DIR}
+	${CMAKE_SOURCE_DIR}/external/spdlog/include
+	${CMAKE_SOURCE_DIR}/external/cereal/include
+)
 
 # デバッグビルド時の.libのポストフィックス
 set(CMAKE_DEBUG_POSTFIX "d")
