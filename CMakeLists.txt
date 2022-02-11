@@ -64,5 +64,5 @@ set(CMAKE_DEBUG_POSTFIX "d")
 set(CMAKE_INSTALL_INCLUDEDIR "${CMAKE_INSTALL_INCLUDEDIR}/wx2")
 
 # サブプロジェクトを含めます。
-add_subdirectory(common)
+add_subdirectory(wx2)
 add_subdirectory(example)

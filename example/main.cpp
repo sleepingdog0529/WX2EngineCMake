@@ -1,4 +1,4 @@
-#include "common/log.h"
+#include "wx2/log.h"
 
 int main()
 {
